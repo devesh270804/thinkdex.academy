@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ambassador-section {
+  text-align: right;
+  padding: 3rem 1rem;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ambassador-tagline {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: 600;
+  margin-top: 0;
+  text-align: right;
+}
+
+.ambassador-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: right;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ambassador-title strong {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ambassador-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.ambassador-content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 1rem;
+}
+
+.ambassador-left p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.ambassador-left {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.ambassador-right {
+  text-align: right;
+}
+
+.ambassador-btn {
+  padding: 0.5rem 1.6rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 550;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  line-height: 1.5rem;
+}
+
+.ambassador-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.ambassador-link {
+  font-size: 1.25rem;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ambassador-link:hover {
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .ambassador-section {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  .ambassador-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .ambassador-tagline {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .ambassador-content-row {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .ambassador-left, .ambassador-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .ambassador-btn {
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .ambassador-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ambassador-section {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .ambassador-title {
+    font-size: 1.6rem;
+  }
+
+  .ambassador-tagline {
+    font-size: 1rem;
+  }
+
+  .ambassador-left p {
+    font-size: 1rem;
+  }
+
+  .ambassador-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .ambassador-link {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

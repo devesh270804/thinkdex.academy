@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import StudentCertifications from "./components/StudentCertifications";
+import TrainingCertification from "./components/TrainingCertification";
+import LearningPathsGrid from "./cards/LearningPathsGrid";
+import InternshipProgram from "./components/InternshipProgram";
+import TopCompanyReferrals from "./components/TopCompanyReferrals";
+import CareerReadinessAgents from "./components/CareerReadinessAgents";
+import AmbassadorProgram from "./components/AmbassadorProgram";
+import WhatYoullGet from "./components/WhatYoullGet";
+import Faqs from "./components/faqs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <StudentCertifications />
       </header>
+      <div className="App-body">
+        <TrainingCertification />
+        <LearningPathsGrid />
+        <InternshipProgram />
+        <TopCompanyReferrals />
+        <CareerReadinessAgents />
+        <AmbassadorProgram />
+        <WhatYoullGet />
+        <Faqs />
+      </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-top: 1.5px solid #454545;
+  width: 90%;
+  margin: 1rem auto;
+  text-align: start;
+}
+
+h2{
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: start;
+  padding: 1.2rem 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.bp{
+  font-size: 0.85rem;
+  padding: 0.3rem 0;
+  font-weight: 500;
+  color: #666666;
+  text-align: start;
+}
+.brand-name{
+  font-weight: 600;
+  padding: 0.3rem 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center; 
+  text-align: start;
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+  gap: 2rem;
+}
+
+.footer-contact h4{
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.footer-links h4 {
+  font-size: 16px;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+}
+
+.address {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.icon {
+  cursor: pointer;
+  width: 6%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 2;
+  min-width: 300px;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1.5px solid #454545;
+  padding: 1rem;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.footer-links-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-links-bottom a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+.footer-bottom p,
+.footer-links-bottom,
+.country {
+  margin: 0;
+}
+
+.footer-links-bottom a:hover {
+  text-decoration: underline;
+}
+
+.country {
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* For screens up to 1000px */
+@media (max-width: 1000px) {
+  .footer {
+    width: 95%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Reduced */
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+    gap: 1rem 2rem; /* Row and column gap */
+    flex-wrap: wrap;
+  }
+
+  .footer-contact h4,
+  .footer-links h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .icon {
+    width: 6%;
+  }
+}
+
+/* For screens up to 768px (tablet) */
+@media (max-width: 768px) {
+  .footer {
+    width: 95%;
+    text-align: center;
+  }
+
+  h2,
+  .bp,
+  .brand-name,
+  .footer-contact h4,
+  .footer-links h4 {
+    text-align: center;
+  }
+
+  .footer-top {
+    align-items: center;
+    gap: 1.5rem; /* Reduced */
+  }
+
+  .footer-contact {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem 1.5rem; /* Row and column gaps */
+  }
+
+  .footer-links ul {
+    padding: 0 0.5rem;
+  }
+
+  .address {
+    font-size: 0.9rem;
+  }
+
+    .social-icons {
+  justify-content: center;
+}
+
+  .icon {
+    width: 8%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6rem;
+  }
+
+  .footer-links-bottom {
+    justify-content: center;
+  }
+}
+
+/* For screens up to 480px (mobile) */
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .bp {
+    font-size: 0.75rem;
+  }
+
+  .brand-name {
+    font-size: 0.85rem;
+  }
+
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Consistent small gap */
+  }
+
+  .footer-links ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .address {
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    width: 12%;
+  }
+
+  .footer-bottom {
+    padding: 0.8rem 0;
+    font-size: 12px;
+  }
+
+  .footer-links-bottom a {
+    font-size: 0.85rem;
+  }
+
+  .country {
+    font-size: 11px;
+  }
+}

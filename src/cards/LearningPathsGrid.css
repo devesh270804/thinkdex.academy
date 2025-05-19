@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  width: 84%;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.6rem 2rem;
+}
+
+.explore-button-wrapper {
+  width: 84%;
+  margin: 1.5rem auto 0;
+  text-align: right;
+}
+
+.explore-button {
+  padding: 0.85rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.explore-button .arrow {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+} 
+
+
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .learning-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .grid-container,
+  .explore-button-wrapper {
+    width: 95%;
+  }
+
+  .explore-button-wrapper {
+    text-align: center; 
+  }
+
+  .explore-button {
+    font-size: 0.9rem;    
+    padding: 0.5rem 1rem; 
+  }
+
+  .explore-button .arrow {
+    font-size: 1rem; 
+  }
+
+}
+
+

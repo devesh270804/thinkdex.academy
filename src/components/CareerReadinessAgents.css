@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.career-agents-section {
+  padding: 3rem 5%;
+  background-color: #fff;
+  text-align: start;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.career-agents-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.career-agents-section h2 span {
+  color: #333;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.explore-btn {
+  padding: 0.85rem 1.7rem;
+  margin: 2rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: 2px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.testimonial {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .career-agents-section {
+    padding: 2rem 4%;
+    width: 95%;
+  }
+
+  .career-agents-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .explore-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-agents-section {
+    padding: 1.5rem 3%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .career-agents-section h2 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .explore-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .testimonial {
+    flex-direction: column;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
