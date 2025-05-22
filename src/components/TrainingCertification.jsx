@@ -1,5 +1,6 @@
-import React from 'react';
-import './TrainingCertification.css';
+import React from "react";
+import "./TrainingCertification.css";
+import LearningPathsGrid from "../cards/LearningPathsGrid";
 
 const TrainingCertification = () => {
   return (
@@ -9,19 +10,25 @@ const TrainingCertification = () => {
       </h2>
       <div className="content">
         <p className="description">
-          Built in collaboration with top professionals from Google, Microsoft, and leading startups.
-          These are deep-dive reading paths referencing study material from Harvard, Stanford, Oxford, MIT, and IITs.
+          Built in collaboration with top professionals from Google, Microsoft,
+          and leading startups. These are deep-dive reading paths referencing
+          study material from Harvard, Stanford, Oxford, MIT, and IITs.
         </p>
         <div className="options">
           <div className="option">
             <p className="label">Premium</p>
-            <button className="linkButton">Dexter Originals</button>
+            <a className="linkButton" href="#dexter-originals">Dexter Originals</a>
           </div>
           <div className="option">
             <p className="label">Free</p>
-            <button className="linkButton outlined">
+            <a
+              className="linkButton outlined"
+              href="https://dexterlearning.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Community–Curated
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -30,4 +37,3 @@ const TrainingCertification = () => {
 };
 
 export default TrainingCertification;
-

@@ -5,65 +5,67 @@
 }
 
 .company-section {
-  text-align: start;
-  padding: 4rem 10%;
+  padding: 4rem 0;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  margin: 0 auto;
-
+  overflow: hidden;
 }
 
 .company-section h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 2rem;
-  max-width: 65%;
-  padding: 2rem;
+  text-align: center;
+  padding: 0 2rem;
 }
 
-.logo-grid {
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 5%;
-  padding-left: 2rem;
+  width: max-content;
+  animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .company-logo {
-  width: 10%;
+  width: 120px;
   height: auto;
   object-fit: contain;
   aspect-ratio: 3/2;
   transition: transform 0.3s ease;
+  margin-right: 3rem;
 }
 
 .company-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
   .company-section {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0;
   }
 
   .company-section h2 {
-    font-size: 1.1rem;
-    max-width: 85%;
-    padding: 1rem 0;
+    font-size: 1.2rem;
+    padding: 0 1rem;
     margin-bottom: 1.5rem;
   }
 
-  .logo-grid {
-    gap: 2rem;
-    padding-left: 0;
-    justify-content: center;
-  }
-
   .company-logo {
-    width: 12%; 
+    width: 80px;
   }
 }
-

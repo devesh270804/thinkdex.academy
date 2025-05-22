@@ -20,7 +20,7 @@ const learningPaths = [
 const LearningPathsGrid = () => {
   return (
     <>
-      <div className="grid-container">
+      <div className="grid-container" id="dexter-originals">
         <div className="grid-layout">
           {learningPaths.map((path, index) => (
             <LearningPathCard
