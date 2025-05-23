@@ -30,7 +30,7 @@
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:  2rem 20%;
+  gap:  2rem 15%;
   max-width: 900px;
   margin: 4rem auto;
 }
@@ -42,14 +42,16 @@
   text-align: center;
   padding: 1.2rem 1.6rem;
   border-radius: 10px;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: rgb(0, 0, 115);
   transition: transform 0.2s ease;
 }
 
 .benefit-card:hover {
   transform: translateY(-4px);
 }
+
 
 
 @media (max-width: 768px) {

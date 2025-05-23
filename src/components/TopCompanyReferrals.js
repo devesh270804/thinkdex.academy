@@ -19,20 +19,20 @@ const companies = [
   { name: "Meta", logo: meta },
   { name: "Google", logo: google },
   { name: "American Express", logo: amex },
+  { name: "Instagram", logo: instagram },
   { name: "Microsoft", logo: microsoft },
   { name: "Apple", logo: apple },
   { name: "Amazon", logo: amazon },
   { name: "Accenture", logo: accenture },
   { name: "Facebook", logo: facebook },
-  { name: "Instagram", logo: instagram },
-  { name: "LinkedIn", logo: linkedin },
   { name: "Samsung", logo: samsung },
   { name: "TCS", logo: tcs },
   { name: "Spotify", logo: spotify },
+  { name: "LinkedIn", logo: linkedin },
 ];
 
 const TopCompanyReferrals = () => {
-  const repeatedCompanies = [...companies, ...companies]; // 👈 duplication for smooth scroll
+  const repeatedCompanies = [...companies, ...companies];
 
   return (
     <div className="company-section">
